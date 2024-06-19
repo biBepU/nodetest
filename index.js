@@ -31,18 +31,18 @@ const fs = require('fs');
 // }
 
 
-if (!fs.existsSync('./newFolder')){
-    fs.mkdir('./newFolder',(err)=>{
-        if(err){
-            console.log(err)
-        }
-        console.log("doc created")
-    })
-}else{
-    fs.rmdir('./newFolder',(err)=>{
-        if(err){
-            console.log(err)
-        }
-        console.log("doc deleated")
-    })
-}
+// if (!fs.existsSync('./newFolder')){
+//     fs.mkdir('./newFolder',(err)=>{
+//         if(err){
+//             console.log(err)
+//         }
+//         console.log("doc created")
+//     })
+// }else{
+//     fs.rmdir('./newFolder',(err)=>{
+//         if(err){
+//             console.log(err)
+//         }
+//         console.log("doc deleated")
+//     })
+// }
