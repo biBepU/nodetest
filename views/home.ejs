@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <% if(blogs.length){%>
+    <% blogs.forEach(blogs=>{  %>
+        <h1><%= blogs.title  %></h1>
+        <p><%= blogs.intro%></p>
+
+    <% }) %>
+    <% }else{ %>
+        <h3>No blogs found</h3>
+   <% } %>
+     
+</body>
+</html>
